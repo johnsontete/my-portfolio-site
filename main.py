@@ -8,7 +8,7 @@ def index():
 
 @app.route('/resume')
 def resume():
-      return send_from_directory(directory='resume', path='Resume.pdf')
+      return send_from_directory(directory='Resume', path='Resume.pdf')
 
 if __name__ == '__main__':
     app.run(debug=False,host='0.0.0.0')
